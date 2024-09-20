@@ -7,6 +7,7 @@ import Navbar from "@/components/globals/Navbar"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
 import { useRouter } from "next/navigation"; 
 import useAuthStore from '../../stores/useAuthStore';
+import { Toaster } from "@/components/ui/sonner"
 
 export default function DashboardLayout({
   children
@@ -48,6 +49,7 @@ export default function DashboardLayout({
         <main className="flex-1 overflow-y-auto p-4 md:p-6">
           {children}
         </main>
+        <Toaster position="top-right" richColors   />
       </div>
     </div>
   );
