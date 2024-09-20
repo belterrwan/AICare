@@ -36,15 +36,9 @@ export default function Home() {
                     </div>
                     <Input id="password" type="password" required />
                 </div>
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full mb-2">
                     Login
                 </Button>
-                </div>
-                <div className="mt-4 text-center text-sm">
-                Don&apos;t have an account?{" "}
-                <Link href="/register" className="underline">
-                    Sign up
-                </Link>
                 </div>
             </CardContent>
             </Card>
