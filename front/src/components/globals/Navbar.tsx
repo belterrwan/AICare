@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, Search, Bell, User, LogOut } from 'lucide-react';
+import { Menu, Search, User } from 'lucide-react';
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -47,10 +47,6 @@ const Navbar:React.FC<NavbarProps> = ({onMenuClick }: NavbarProps) => {
           </div>
         </form>
       </div>
-      <Button variant="ghost" size="icon">
-        <Bell className="h-5 w-5" />
-        <span className="sr-only">View notifications</span>
-      </Button>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" size="icon">

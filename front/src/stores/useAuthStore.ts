@@ -20,6 +20,9 @@ interface AuthState {
 
 // Función para cargar el estado desde localStorage
 const loadState = (): Partial<AuthState> => {
+  if (typeof window === 'undefined') {
+    return { user: null, token: null, isAuthenticated: false };
+  }
   try {
     const user = JSON.parse(localStorage.getItem('user') || 'null') as User | null;
     const token = localStorage.getItem('token') || null;
