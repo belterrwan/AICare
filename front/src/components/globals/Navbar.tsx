@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from "next/link"
 import { Menu, Search, Bell, User } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
