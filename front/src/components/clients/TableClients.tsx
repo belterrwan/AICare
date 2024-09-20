@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table'
-import { Badge } from '../ui/badge'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from '../ui/dropdown-menu'
 import { Button } from '../ui/button'
 import { MoreHorizontal } from 'lucide-react'
@@ -20,12 +19,15 @@ const TableClients = () => {
         <TableHeader>
           <TableRow>
             <TableHead>Name</TableHead>
-            <TableHead>Status</TableHead>
+            <TableHead>Birthdate</TableHead>
             <TableHead className="hidden md:table-cell">
-              Price
+              Mail
             </TableHead>
             <TableHead className="hidden md:table-cell">
-              Total Sales
+              Phone number
+            </TableHead>
+            <TableHead className="hidden md:table-cell">
+              Insurance number
             </TableHead>
             <TableHead className="hidden md:table-cell">
               Created at
@@ -38,18 +40,21 @@ const TableClients = () => {
         <TableBody>
           <TableRow>
             <TableCell className="font-medium">
-              Luminous VR Headset
+              Cumstavo Nolicesco
             </TableCell>
             <TableCell>
-              <Badge variant="outline">Active</Badge>
+              11/9/2001
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              $199.99
+              nolascomomos@gmail.com
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              30
-            </TableCell>
+              6182221230
+            </TableCell>    
             <TableCell className="hidden md:table-cell">
+              12912991249
+            </TableCell>
+            <TableCell className='hidden md:table-cell'>
               2024-02-14 02:14 PM
             </TableCell>
             <TableCell>
@@ -71,21 +76,26 @@ const TableClients = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </TableCell>
-          </TableRow>
+          </TableRow>          
+        </TableBody>
+        <TableBody>
           <TableRow>
             <TableCell className="font-medium">
-              Luminous VR Headset
+              Cumstavo Nolicesco
             </TableCell>
             <TableCell>
-              <Badge variant="outline">Active</Badge>
+              11/9/2001
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              $199.99
+              nolascomomos@gmail.com
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              30
-            </TableCell>
+              6182221230
+            </TableCell>    
             <TableCell className="hidden md:table-cell">
+              12912991249
+            </TableCell>
+            <TableCell className='hidden md:table-cell'>
               2024-02-14 02:14 PM
             </TableCell>
             <TableCell>
@@ -107,21 +117,26 @@ const TableClients = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </TableCell>
-          </TableRow>
+          </TableRow>          
+        </TableBody>
+        <TableBody>
           <TableRow>
             <TableCell className="font-medium">
-              Luminous VR Headset
+              Cumstavo Nolicesco
             </TableCell>
             <TableCell>
-              <Badge variant="outline">Active</Badge>
+              11/9/2001
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              $199.99
+              nolascomomos@gmail.com
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              30
-            </TableCell>
+              6182221230
+            </TableCell>    
             <TableCell className="hidden md:table-cell">
+              12912991249
+            </TableCell>
+            <TableCell className='hidden md:table-cell'>
               2024-02-14 02:14 PM
             </TableCell>
             <TableCell>
@@ -143,21 +158,26 @@ const TableClients = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </TableCell>
-          </TableRow>
-                    <TableRow>
+          </TableRow>          
+        </TableBody>
+        <TableBody>
+          <TableRow>
             <TableCell className="font-medium">
-              Luminous VR Headset
+              Cumstavo Nolicesco
             </TableCell>
             <TableCell>
-              <Badge variant="outline">Active</Badge>
+              11/9/2001
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              $199.99
+              nolascomomos@gmail.com
             </TableCell>
             <TableCell className="hidden md:table-cell">
-              30
-            </TableCell>
+              6182221230
+            </TableCell>    
             <TableCell className="hidden md:table-cell">
+              12912991249
+            </TableCell>
+            <TableCell className='hidden md:table-cell'>
               2024-02-14 02:14 PM
             </TableCell>
             <TableCell>
@@ -179,7 +199,7 @@ const TableClients = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </TableCell>
-          </TableRow>
+          </TableRow>          
         </TableBody>
       </Table>
     </CardContent>
