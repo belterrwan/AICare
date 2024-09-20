@@ -4,14 +4,25 @@
 import * as React from "react"
 import Sidebar from "@/components/globals/Sidebar"
 import Navbar from "@/components/globals/Navbar"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent } from "@/components/ui/sheet"
+import { useRouter } from "next/navigation"; 
+import useAuthStore from '../../stores/useAuthStore';
 
 export default function DashboardLayout({
   children
 }: {
   children: React.ReactNode;
 }) {
+  const { isAuthenticated } = useAuthStore();
+  const router = useRouter();
 
+  React.useEffect(() => {
+    if (!isAuthenticated){
+      router.push("/");
+    }
+  },[isAuthenticated, router]);
+
+  console.log(isAuthenticated);
 
   const [sidebarOpen, setSidebarOpen] = React.useState(false)
 

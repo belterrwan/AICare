@@ -1,8 +1,10 @@
 import React from 'react'
-import { Menu, Search, Bell, User } from "lucide-react"
+import { Menu, Search, Bell, User, LogOut } from 'lucide-react';
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import useAuthStore from '../../stores/useAuthStore';
+import { useRouter } from 'next/navigation';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,11 +14,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+
 interface NavbarProps {
   onMenuClick: () => void;
 }
 
 const Navbar:React.FC<NavbarProps> = ({onMenuClick }: NavbarProps) => {
+
+  const { logout } = useAuthStore();
+  const router = useRouter();
+
+  const handleLogout = () => {
+    logout();
+    router.push("/"); // Redirige al inicio de sesión tras cerrar sesión
+  };
+
   return (
     <header className="flex h-14 items-center gap-4 border-b bg-gray-100/40 px-4 lg:h-[60px] lg:px-6">
 <Button variant="ghost" size="icon" className="lg:hidden" onClick={onMenuClick}>
@@ -52,7 +64,7 @@ const Navbar:React.FC<NavbarProps> = ({onMenuClick }: NavbarProps) => {
           <DropdownMenuItem>Profile</DropdownMenuItem>
           <DropdownMenuItem>Settings</DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>Log out</DropdownMenuItem>
+          <DropdownMenuItem onClick={handleLogout}>Log out</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </header>
