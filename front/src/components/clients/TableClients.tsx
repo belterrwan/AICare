@@ -1,9 +1,10 @@
 import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from '../ui/dropdown-menu'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuTrigger } from '../ui/dropdown-menu'
 import { Button } from '../ui/button'
 import { MoreHorizontal } from 'lucide-react'
+import InfoClient from './InfoClient'
 
 const TableClients = () => {
   return (
@@ -71,131 +72,10 @@ const TableClients = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
                   <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                  <DropdownMenuItem>Edit</DropdownMenuItem>
-                  <DropdownMenuItem>Delete</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </TableCell>
-          </TableRow>          
-        </TableBody>
-        <TableBody>
-          <TableRow>
-            <TableCell className="font-medium">
-              Cumstavo Nolicesco
-            </TableCell>
-            <TableCell>
-              11/9/2001
-            </TableCell>
-            <TableCell className="hidden md:table-cell">
-              nolascomomos@gmail.com
-            </TableCell>
-            <TableCell className="hidden md:table-cell">
-              6182221230
-            </TableCell>    
-            <TableCell className="hidden md:table-cell">
-              12912991249
-            </TableCell>
-            <TableCell className='hidden md:table-cell'>
-              2024-02-14 02:14 PM
-            </TableCell>
-            <TableCell>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    aria-haspopup="true"
-                    size="icon"
-                    variant="ghost"
-                  >
-                    <MoreHorizontal className="h-4 w-4" />
-                    <span className="sr-only">Toggle menu</span>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                  <DropdownMenuItem>Edit</DropdownMenuItem>
-                  <DropdownMenuItem>Delete</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </TableCell>
-          </TableRow>          
-        </TableBody>
-        <TableBody>
-          <TableRow>
-            <TableCell className="font-medium">
-              Cumstavo Nolicesco
-            </TableCell>
-            <TableCell>
-              11/9/2001
-            </TableCell>
-            <TableCell className="hidden md:table-cell">
-              nolascomomos@gmail.com
-            </TableCell>
-            <TableCell className="hidden md:table-cell">
-              6182221230
-            </TableCell>    
-            <TableCell className="hidden md:table-cell">
-              12912991249
-            </TableCell>
-            <TableCell className='hidden md:table-cell'>
-              2024-02-14 02:14 PM
-            </TableCell>
-            <TableCell>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    aria-haspopup="true"
-                    size="icon"
-                    variant="ghost"
-                  >
-                    <MoreHorizontal className="h-4 w-4" />
-                    <span className="sr-only">Toggle menu</span>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                  <DropdownMenuItem>Edit</DropdownMenuItem>
-                  <DropdownMenuItem>Delete</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </TableCell>
-          </TableRow>          
-        </TableBody>
-        <TableBody>
-          <TableRow>
-            <TableCell className="font-medium">
-              Cumstavo Nolicesco
-            </TableCell>
-            <TableCell>
-              11/9/2001
-            </TableCell>
-            <TableCell className="hidden md:table-cell">
-              nolascomomos@gmail.com
-            </TableCell>
-            <TableCell className="hidden md:table-cell">
-              6182221230
-            </TableCell>    
-            <TableCell className="hidden md:table-cell">
-              12912991249
-            </TableCell>
-            <TableCell className='hidden md:table-cell'>
-              2024-02-14 02:14 PM
-            </TableCell>
-            <TableCell>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    aria-haspopup="true"
-                    size="icon"
-                    variant="ghost"
-                  >
-                    <MoreHorizontal className="h-4 w-4" />
-                    <span className="sr-only">Toggle menu</span>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuLabel>Actions</DropdownMenuLabel>
-                  <DropdownMenuItem>Edit</DropdownMenuItem>
-                  <DropdownMenuItem>Delete</DropdownMenuItem>
+               
+                    <InfoClient/>
+             
+                 
                 </DropdownMenuContent>
               </DropdownMenu>
             </TableCell>
